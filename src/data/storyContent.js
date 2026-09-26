@@ -5,6 +5,7 @@ export const STORY_PANELS = [
     location: 'Global Video Call — 10 Cities',
     character: 'Plotty & The Club',
     text: 'John, Mike, Sarah, Emma, Liam, Sofia, Noah, Aisha, Carlos, and Yuki are the Global Data Explorers. They live in ten different countries, but they meet on video calls to solve data mysteries.',
+    image: '/story/story_panel_1.png',
     hasConceptCard: false
   },
   {
@@ -13,6 +14,7 @@ export const STORY_PANELS = [
     location: 'New York Festival HQ',
     character: 'Mike & Plotty',
     text: 'Tonight is the World Youth Festival. But the giant Data Wall has glitched! The bars, lines, and circles are all scrambled, and the clock is ticking.',
+    image: '/story/story_panel_2.png',
     hasConceptCard: false
   },
   {
@@ -21,6 +23,7 @@ export const STORY_PANELS = [
     location: 'Sydney, Australia',
     character: 'Emma',
     text: 'In Sydney, Emma counts how many students joined each activity. Football has forty, dance has twenty-five, chess has fifteen, and art has thirty. Each activity gets its own bar. The taller the bar, the bigger the number!',
+    image: '/story/story_panel_3.png',
     hasConceptCard: true,
     conceptCardId: 'bar_charts'
   },
@@ -30,6 +33,7 @@ export const STORY_PANELS = [
     location: 'Cape Town, South Africa',
     character: 'Liam',
     text: 'Liam in Cape Town notices something. Two schools took part, so each activity needs two bars, one for each school. A key tells us which colour belongs to which school.',
+    image: '/story/story_panel_4.png',
     hasConceptCard: true,
     conceptCardId: 'double_bars'
   },
@@ -39,6 +43,7 @@ export const STORY_PANELS = [
     location: 'Cairo, Egypt',
     character: 'Aisha',
     text: 'In Cairo, Aisha checks the temperature at the outdoor stage every two hours. When the temperature rises, her line climbs. When it falls, her line drops. A line graph shows how things change over time.',
+    image: '/story/story_panel_5.png',
     hasConceptCard: true,
     conceptCardId: 'line_graphs'
   },
@@ -48,6 +53,7 @@ export const STORY_PANELS = [
     location: 'Paris, France',
     character: 'Sofia',
     text: 'Sofia in Paris asks two hundred students to vote for their favourite festival snack. Together, all the votes make one whole circle. Every snack gets a slice, and the whole circle is three hundred and sixty degrees.',
+    image: '/story/story_panel_6.png',
     hasConceptCard: true,
     conceptCardId: 'pie_charts'
   },
@@ -57,6 +63,7 @@ export const STORY_PANELS = [
     location: 'Mexico City, Mexico',
     character: 'Diego',
     text: 'But wait! Diego in Mexico City spots a trickster chart. Its bars start at fifty instead of zero, so a tiny difference looks huge. Explorers must always check the scale before they trust a chart.',
+    image: '/story/story_panel_7.png',
     hasConceptCard: true,
     conceptCardId: 'misleading_charts'
   },
@@ -66,6 +73,7 @@ export const STORY_PANELS = [
     location: 'World Youth Festival Stage',
     character: 'Plotty & Global Team',
     text: "With Plotty's help, every chart on the Data Wall lights up. The festival can begin! But first, the Explorers want to see if you can fix the charts too.",
+    image: '/story/story_panel_8.png',
     hasConceptCard: false
   }
 ];
