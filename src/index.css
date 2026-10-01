@@ -1083,6 +1083,82 @@ body {
   position: relative;
 }
 
+/* Trend Tracker Station Styles */
+.trend-segment-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.trend-segment-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  color: white;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  user-select: none;
+}
+.trend-segment-btn:hover {
+  background: rgba(0, 229, 255, 0.15);
+  border-color: var(--neon-cyan);
+  transform: translateY(-2px);
+}
+.trend-segment-btn.selected {
+  background: rgba(255, 213, 79, 0.25);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 12px rgba(255, 213, 79, 0.4);
+}
+.trend-segment-btn.is-correct {
+  background: rgba(0, 230, 118, 0.25);
+  border-color: var(--neon-green);
+  color: #00e676;
+  box-shadow: 0 0 14px rgba(0, 230, 118, 0.4);
+}
+.trend-segment-btn.is-wrong {
+  background: rgba(239, 83, 80, 0.2);
+  border-color: var(--red);
+  box-shadow: 0 0 10px rgba(239, 83, 80, 0.3);
+}
+.seg-badge-rise {
+  background: rgba(0, 230, 118, 0.2);
+  color: #00e676;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+.seg-badge-fall {
+  background: rgba(239, 83, 80, 0.2);
+  color: #ff8a80;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+@keyframes ghostPulse {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+.pulse-ghost-target {
+  animation: ghostPulse 1.8s infinite ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.probe-tooltip-tag {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+}
+
+
 .simulation-all-complete-banner {
   margin-top: 30px;
   background: linear-gradient(135deg, rgba(76, 175, 80, 0.25), rgba(0, 229, 255, 0.25));
